@@ -1,9 +1,11 @@
 package utils;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-
+import org.openqa.selenium.support.ui.FluentWait;
 public class BaseClass {
 
 	public static WebDriver driver;
@@ -64,6 +66,12 @@ public class BaseClass {
 		if (driver != null) {
 			driver.quit();
 		}
+		
+	}
+	
+	public static void implicitlyWaitInSeconds(long seconds)
+	{
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(seconds));
 	}
 
 }

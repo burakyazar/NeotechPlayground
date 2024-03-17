@@ -1,4 +1,4 @@
-package SeleniumTables;
+package Selenium09Tables;
 
 import java.util.Iterator;
 import java.util.List;

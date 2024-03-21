@@ -14,7 +14,7 @@ public class Amazon extends BaseClass {
 
 	public static void main(String[] args) throws InterruptedException {
 		
-			setUp("http://amazon.com");
+			setUp();
 			
 			
 			driver.findElement(By.id("twotabsearchtextbox")).sendKeys("Iphone 14 Case");
@@ -34,7 +34,8 @@ public class Amazon extends BaseClass {
 
 		        // Span öğelerinin metin içeriğini alın ve yazdırın
 		        for (WebElement element : elements) {
-		            System.out.println(element.getText());
+		            System.out.println("Title : "+element.getText());
+		            System.out.println();
 		        }
 		        
 		        Thread.sleep(6000);

@@ -4,6 +4,7 @@ import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchFrameException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -57,5 +58,16 @@ public class CommonMethods extends BaseClass{
 					System.out.println("Text : " + element.getText());
 					System.out.println();
 				}
+		}
+	
+	public static void switchToFrame(int index)
+		{
+		try {
+			driver.switchTo().frame(index);
+		} catch (NoSuchFrameException e) {
+			e.printStackTrace();
+		}
+	
+		
 		}
 }

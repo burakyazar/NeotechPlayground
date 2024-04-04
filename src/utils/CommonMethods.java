@@ -61,39 +61,7 @@ public class CommonMethods extends BaseClass{
 				}
 		}
 
-	
-	
-	
-	
-	
-	
-	
-	//
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 	
 	public static String getText(By locator) 
 	{
@@ -103,23 +71,6 @@ public class CommonMethods extends BaseClass{
 	}
 
 	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 public static void switchToFrame(int index)
 		{

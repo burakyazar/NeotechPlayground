@@ -1,0 +1,62 @@
+--------------------------------
+Class 15
+--------------------------------
+
+Addition to CommonMethods
+
+1. public static JavascriptExecutor getJSObject();
+2. public static void jsClick(WebElement element);
+3. public static void scrollToElement(WebElement element);
+4. public static void scrollDown(int pixel);
+5. public static void scrollUp(int pixel);
+6. public static void selectCalendarDate(List<WebElement> elements, String date);
+
+--------------------------------
+
+// This path will find the uncle of Obama :)
+//div[@id='obama']/../following-sibling::div[1]
+
+<div>
+	<div></div>
+	<div></div>
+	<div id="obama"></div> 
+	<div></div>
+	<div></div>	
+</div>
+<div>
+</div>
+
+--------------------------------
+
+Advanced Xpath
+
+1. If the child element is difficult to locate - no id, no className, no name
+	- We can locate the parent element and we use xpath -> "parent/child"
+
+2. If the parent element is difficult to locate - no id, no className, no name
+	- We can locate the child element and use -> "child/.."
+	- Use this -> "child/../.."" to locate the grandparent
+
+3. If the sibling (same-level element) is difficult to locate - no id, no className, no name
+	- We can locate the sibling element and use -> "preceding-sibling::tagName"
+	* preceding-sibling means siblings before myself
+	//div[@class='inner']/preceding-sibling::div
+
+4. If the sibling (same-level element) is difficult to locate - no id, no className, no name
+	- We can locate the sibling element and use -> "following-sibling::tagName"
+	* following-sibling means siblings after myself
+
+Note: After the TagName, if we have multiple siblings we can use the index [i] to locate each of the siblings
+Ex: //div[@id='username']/following-sibling::li[3] -> Locate the third "li" after myself!
+
+
+Some general commands:
+
+ancestor //atalara gitmek 
+following //kendinden kucuk nesiller yada kuzenler
+child     //kendi neslinden gelen
+preceding  //senden buyuk olan tum nesiller
+following-sibling //senden sonraki kardes
+preceding-sibling //senden onceki kardes
+parent ve .. seni bir onceki aile buyugune goturur
+descendant senden sonra devam eden neslin

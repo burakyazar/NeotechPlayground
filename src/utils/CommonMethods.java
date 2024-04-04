@@ -56,6 +56,13 @@ public class CommonMethods extends BaseClass{
 				{
 					System.out.println("Text : " + element.getText());
 					System.out.println();
+					wait(1);
 				}
 		}
+	public static String getText(By locator) 
+	{
+		return driver.findElement(locator).getText();
+		
+		
+	}
 }

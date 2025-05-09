@@ -1,7 +1,6 @@
 package Homework6;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
 
 import utils.BaseClass;
 
@@ -38,3 +37,4 @@ public class Task1 extends BaseClass{
 	}
 
 }
+//burak
